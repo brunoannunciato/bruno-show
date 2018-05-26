@@ -1,0 +1,179 @@
+body {
+    height: 100%;
+    background: url('images/0100001101110101.jpg') no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    cursor:url('images/smelley.ani');
+}
+
+* {
+    user-select: none;
+}
+
+.tuts-tuts {
+    opacity: 0;
+}
+
+.tudo {
+    align-items: flex-end;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: blue;
+    color: #fff;
+    font-family: Arial, Sans-serif;
+    font-size: 1.125em;
+    padding: 3px 0;
+    letter-spacing: 3px;
+}
+
+.minha-casa {
+    position: relative;
+}
+
+.minha-casa .eu {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    min-width: 320px;
+}
+
+.minha-casa .show {
+    bottom: 0;
+    position: absolute;
+    left: calc(50% - 15%);
+    width: 30%;
+    transform-origin: center;
+    animation: chow 1s infinite;
+}
+
+@media (max-width: 769px) {
+    .show {
+        min-width: 200px;
+        left: calc(50% - 100px) !important;
+    }
+}
+
+@keyframes chow {
+    0% {transform: rotate(10deg)}
+    5% {transform: rotate(-10deg)}
+    10% {transform: rotate(10deg)}
+    15% {transform: rotate(-10deg)}
+    20% {transform: rotate(10deg)}
+    25% {transform: rotate(-10deg)}
+    30% {transform: rotate(10deg)}
+    35% {transform: rotate(-10deg)}
+    40% {transform: rotate(10deg)}
+    45% {transform: rotate(-10deg)}
+    50% {transform: rotate(10deg)}
+    55% {transform: rotate(-10deg)}
+    60% {transform: rotate(10deg)}
+    65% {transform: rotate(-10deg)}
+    70% {transform: rotate(10deg)}
+    75% {transform: rotate(-10deg)}
+    80% {transform: rotate(10deg)}
+    85% {transform: rotate(-10deg)}
+    90% {transform: rotate(10deg)}
+    95% {transform: rotate(-10deg)}
+    100% {transform: rotate(10deg)}
+}
+
+
+
+.passaros {
+    position: absolute;
+    top: 10%;
+    left: -25%;
+    animation: pombos 3s infinite;
+}
+
+@keyframes pombos {
+    0% { left: -25%; }
+    100% { left: 125%; }
+}
+
+.pombo:nth-child(1) {
+    width: 10%;
+    transform: translate(125px, 7px);
+}
+
+.pombo:nth-child(2) {
+    width: 5%;
+    transform: translate(-68px, 23px);
+}
+
+.pombo:nth-child(3) {
+    width: 3%;
+    transform: translate(-162px, -30px);
+}
+
+.cream {
+    position: absolute;
+    left: 75%;
+    animation: cream 10s infinite;
+}
+
+@keyframes cream {
+    0% { bottom: -50%; }
+    100% { bottom: 100% }
+}
+
+.raffinha {
+    position: absolute;
+    width: 15%;
+    animation: raffa 5s infinite;
+    transform: rotate(140deg);
+}
+
+@keyframes raffa {
+    0% {
+        top: -100%;
+        left: -100%;
+    }
+
+    50% {
+        top: -5%;
+        left: -5%;
+    }
+
+    100% {
+        top: -100%;
+        left: -100%;
+    }
+}
+
+.doge {
+    position: absolute;
+    bottom: 0;
+    left: -15%;
+    width: 13%;
+    animation: doge 1s infinite;
+}
+
+@keyframes doge {
+    0% {left: 115%}
+    100% {left: -15%}
+}
+
+.frecha {
+    width: 4%;
+    position: absolute;
+    top: -15%;
+    left: calc(50% - 4%);
+}
+
+@keyframes historia {
+    0% { bottom: -100% }
+    100% { bottom :110% }
+}
