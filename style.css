@@ -22,7 +22,7 @@ body {
     display: flex;
     height: 100vh;
     justify-content: center;
-    width: 100%;
+    width: 100%;cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
 }
 
 .top-bar {
