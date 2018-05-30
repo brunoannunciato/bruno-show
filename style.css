@@ -9,12 +9,17 @@ body {
     cursor:url('images/smelley.ani');
 }
 
+.bg-02 {
+    background: url('images/0100001101110101-2.jpg') no-repeat !important;
+}
+
 * {
     user-select: none;
 }
 
 .tuts-tuts {
     opacity: 0;
+    position: absolute;
 }
 
 .tudo {
@@ -47,6 +52,8 @@ body {
     margin: 0 auto;
     width: 30%;
     min-width: 320px;
+    position: relative;
+    bottom: -50px;
 }
 
 .minha-casa .show {
@@ -56,13 +63,6 @@ body {
     width: 30%;
     transform-origin: center;
     animation: chow 1s infinite;
-}
-
-@media (max-width: 769px) {
-    .show {
-        min-width: 200px;
-        left: calc(50% - 100px) !important;
-    }
 }
 
 @keyframes chow {
@@ -176,4 +176,28 @@ body {
 @keyframes historia {
     0% { bottom: -100% }
     100% { bottom :110% }
+}
+
+@media (max-width: 769px) {
+
+    body {
+        background-size: 120% 120%;
+    }
+
+    .cream { display: none; }
+
+    .show {
+        min-width: 200px;
+        left: calc(50% - 100px) !important;
+    }
+
+    .frecha  {
+        width: 11%;
+        left: calc(50% - 11%);
+    }
+
+    .medico {
+        font-size: .75em;
+        padding: 0 5%;
+    }
 }
