@@ -11,13 +11,14 @@
     <div class="tudo">
 
             <div class="top-bar">
-                <marquee behavior="alternate">
+                <marquee behavior="alternate" class="medico">
                     Ao persistir os sintomas o médico devera ser consultado.
                 </marquee>
             </div>
 
             <audio controls autoplay class="tuts-tuts">
-                <source src="songs/bg-music.mp3" type="audio/mpeg">
+                <source src="songs/bg-music.mp3" type="audio/mpeg"  autoplay loop autostart="true" loop="true">
+                <source src="songs/bg-music.ogg" type="audio/mpeg"  autoplay loop autostart="true" loop="true">
             </audio>
 
         <div class="passaros">
@@ -34,12 +35,14 @@
 
         <div class="minha-casa">
             <img src="images/frecha.gif" alt="flac" class="frecha">
-            <img src="images/katiiiiau.png" alt="EU" class="eu">
+            <img src="images/katiiiiau.png" alt="EU" class="eu" data-tilt>
             <img src="images/xou.png" alt="SHOW" class="show">
         </div>
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="tilt.jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
