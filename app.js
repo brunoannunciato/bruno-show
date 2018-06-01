@@ -14,4 +14,8 @@ addEventListener('mousemove', function() {
     } else {
         document.querySelector('body').classList.remove('bg-02');
     }
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 3249228b8af8c8e7ce80e99175ae534871409b71
