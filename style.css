@@ -129,12 +129,49 @@ body {
     100% { bottom: 100% }
 }
 
+.vic {
+    position: absolute;
+    top: calc(50% - 150px);
+    transform: rotate(-33deg);
+    animation: vic 3s infinite ease-in;
+}
+
+@keyframes vic {
+    0% {
+        right: 0;
+        filter:drop-shadow( 10px 10px 20px rgba(148,0,211,1));
+    }
+
+    15% { filter:drop-shadow( 10px 10px 20px rgba(76,0,130,1)); }
+
+    30% { filter:drop-shadow( 10px 10px 20px rgba(0,0,255,1)); }
+
+    50% {
+        filter:drop-shadow( 10px 10px 20px rgba(0,255,0,1));
+        right: -300px;
+    }
+
+    60% { filter:drop-shadow( 10px 10px 20px rgba(255,255,0,1)); }
+
+    75% { filter:drop-shadow( 10px 10px 20px rgba(255,127,0,1)); }
+
+    90% { filter:drop-shadow( 10px 10px 50px 2gba(255,0,0,1); )}
+
+    100% {
+       right: 0;
+       filter:drop-shadow( 10px 10px 20px rgba(148,0,211,1));
+    }
+}
+
+@media screen and (max-width: 768px) {.vic { display: none; }}
+ 
 .raffinha {
     position: absolute;
     width: 15%;
     animation: raffa 5s infinite;
     transform: rotate(140deg);
 }
+
 
 @keyframes raffa {
     0% {
