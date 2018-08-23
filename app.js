@@ -7,6 +7,10 @@ music.play();
     music.play();
 });
 
+console.log('Email: contato@brunoannunciato.com');
+console.log('Likedin: www.linkedin.com/in/bruno-annunciato-b20163149/');
+console.log('Instagram: @brunobannunciato');
+
 addEventListener('mousemove', function() {
 
     if (document.querySelector('body').classList == '' ) {
