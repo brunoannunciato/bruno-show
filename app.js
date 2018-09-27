@@ -19,3 +19,5 @@ addEventListener('mousemove', function() {
         document.querySelector('body').classList.remove('bg-02');
     }
 })
+
+console.log('teste')
