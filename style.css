@@ -71,3 +71,13 @@ body {
     95% {transform: rotate(-10deg)}
     100% {transform: rotate(10deg)}
 }
+
+@media (max-width: 769px) {
+    .background {
+        width: 500%;
+        position: absolute;
+        height: auto;
+        bottom: 0;
+        overflow: hidden;
+    }
+}
