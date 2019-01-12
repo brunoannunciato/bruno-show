@@ -1,33 +1,19 @@
 body {
     height: 100%;
-    background: url('images/0100001101110101.jpg') no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow: hidden;
-    cursor:url('images/smelley.ani');
-}
-
-.bg-02 {
-    background: url('images/0100001101110101-2.jpg') no-repeat !important;
 }
 
 * {
     user-select: none;
 }
 
-.tuts-tuts {
-    opacity: 0;
-    position: absolute;
-}
-
-.tudo {
-    align-items: flex-end;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;cursor: url("/images/cursor.png"), auto;
+.background {
+    width: 100%;
+    height: auto;
 }
 
 .top-bar {
@@ -43,26 +29,23 @@ body {
     letter-spacing: 3px;
 }
 
-.minha-casa {
-    position: relative;
-}
-
-.minha-casa .eu {
-    display: block;
-    margin: 0 auto;
-    width: 30%;
-    min-width: 320px;
-    position: relative;
-    bottom: -50px;
-}
-
-.minha-casa .show {
-    bottom: 0;
+.eu {
     position: absolute;
-    left: calc(50% - 15%);
-    width: 30%;
-    transform-origin: center;
-    animation: chow 1s infinite;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.show {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 350px;
+    animation: chow infinite 1s;
 }
 
 @keyframes chow {
@@ -88,157 +71,3 @@ body {
     95% {transform: rotate(-10deg)}
     100% {transform: rotate(10deg)}
 }
-
-
-
-.passaros {
-    position: absolute;
-    top: 10%;
-    left: -25%;
-    animation: pombos 3s infinite;
-}
-
-@keyframes pombos {
-    0% { left: -25%; }
-    100% { left: 125%; }
-}
-
-.pombo:nth-child(1) {
-    width: 10%;
-    transform: translate(125px, 7px);
-}
-
-.pombo:nth-child(2) {
-    width: 5%;
-    transform: translate(-68px, 23px);
-}
-
-.pombo:nth-child(3) {
-    width: 3%;
-    transform: translate(-162px, -30px);
-}
-
-.cream {
-    position: absolute;
-    left: 75%;
-    animation: cream 10s infinite;
-}
-
-@keyframes cream {
-    0% { bottom: -50%; }
-    100% { bottom: 100% }
-}
-
-.vic {
-    position: absolute;
-    top: calc(50% - 150px);
-    transform: rotate(-33deg);
-    animation: vic 3s infinite ease-in;
-}
-
-@keyframes vic {
-    0% {
-        right: 0;
-        filter:drop-shadow( 10px 10px 20px rgba(148,0,211,1));
-    }
-
-    15% { filter:drop-shadow( 10px 10px 20px rgba(76,0,130,1)); }
-
-    30% { filter:drop-shadow( 10px 10px 20px rgba(0,0,255,1)); }
-
-    50% {
-        filter:drop-shadow( 10px 10px 20px rgba(0,255,0,1));
-        right: -300px;
-    }
-
-    60% { filter:drop-shadow( 10px 10px 20px rgba(255,255,0,1)); }
-
-    75% { filter:drop-shadow( 10px 10px 20px rgba(255,127,0,1)); }
-
-    90% { filter:drop-shadow( 10px 10px 50px 2gba(255,0,0,1); )}
-
-    100% {
-       right: 0;
-       filter:drop-shadow( 10px 10px 20px rgba(148,0,211,1));
-    }
-}
-
-@media screen and (max-width: 768px) {.vic { display: none; }}
- 
-.raffinha {
-    position: absolute;
-    width: 15%;
-    animation: raffa 5s infinite;
-    transform: rotate(140deg);
-}
-
-
-@keyframes raffa {
-    0% {
-        top: -100%;
-        left: -100%;
-    }
-
-    50% {
-        top: -5%;
-        left: -5%;
-    }
-
-    100% {
-        top: -100%;
-        left: -100%;
-    }
-}
-
-.doge {
-    position: absolute;
-    bottom: 0;
-    left: -15%;
-    width: 13%;
-    animation: doge 1s infinite;
-}
-
-@keyframes doge {
-    0% {left: 115%}
-    100% {left: -15%}
-}
-
-.frecha {
-    width: 4%;
-    position: absolute;
-    top: -15%;
-    left: calc(50% - 4%);
-}
-
-@keyframes historia {
-    0% { bottom: -100% }
-    100% { bottom :110% }
-}
-
-@media (max-width: 769px) {
-
-    body {
-        background-size: 120% 120%;
-    }
-
-    .cream { display: none; }
-
-    .show {
-        min-width: 200px;
-        left: calc(50% - 100px) !important;
-    }
-
-    .frecha  {
-        width: 11%;
-        left: calc(50% - 11%);
-    }
-
-    .medico {
-        font-size: .75em;
-        padding: 0 5%;
-    }
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 3249228b8af8c8e7ce80e99175ae534871409b71
