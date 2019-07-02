@@ -46,7 +46,7 @@ var emoji = ['🌽', '🍇', '🍌', '🍒', '🍕', '🍷', '🍭', '💖', '�
 var circles = [];
 
 for (var i = 0; i < 15; i++) {
-  addCircle(i * 50, [10 + 0, 300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [0 + 0, 300], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 50, [10 + 0, -300], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 50, [10 - 200, -300], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 50, [10 + 200, 300], emoji[Math.floor(Math.random() * emoji.length)]);
