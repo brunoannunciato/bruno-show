@@ -1,35 +1,41 @@
+html,
 body {
-    height: 100%;
-    background-size: cover;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    width: 100%;
     overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
 }
 
 * {
-    user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .background {
-    width: 100%;
-    height: auto;
-}
-
-.top-bar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.background video {
+    position: absolute;
     width: 100%;
-    background: blue;
-    color: #fff;
-    font-family: Arial, Sans-serif;
-    font-size: 1.125em;
-    padding: 3px 0;
-    letter-spacing: 3px;
+    height: auto;
+    top: 0;
+    
 }
 
 .eu {
+    overflow: hidden;
+}
+
+.bruno {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -45,10 +51,17 @@ body {
     right: 0;
     margin: 0 auto;
     max-width: 350px;
-    animation: chow infinite 1s;
+    animation: show infinite 1s;
 }
 
-@keyframes chow {
+#animate{
+    margin: 0 auto;
+    width: 20px;
+    overflow: visible;
+    position: relative;
+}
+
+@keyframes show {
     0% {transform: rotate(10deg)}
     5% {transform: rotate(-10deg)}
     10% {transform: rotate(10deg)}
@@ -72,12 +85,12 @@ body {
     100% {transform: rotate(10deg)}
 }
 
-@media (max-width: 769px) {
-    .background {
-        width: 500%;
-        position: absolute;
-        height: auto;
-        bottom: 0;
-        overflow: hidden;
+
+@media (max-width: 1024px) {
+    .background video {
+        left: 70%;
+        transform: translateX(-70%);
+        width: auto;
+        height: 100%;
     }
 }
