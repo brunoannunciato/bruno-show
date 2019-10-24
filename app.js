@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const setPageTitle = () => {
-    const characters = ['😁', '💕', '🤷‍', '🐱‍👤', '🐱‍🐉', '🤣', '🛴', '😨','🙄','🍠','😙','🙂','🍁','😫','🎈','🎨','😯','👰','😚','😁','🎅','🤣','㊗','🙂','🔞','🤩','💨','😛','😌','🕳','🤥'];
+    const characters = ['😁', '💕', '🤷‍', '🐱‍👤', '🌵', '🐱‍🐉', '🤣', '🛴', '😨','🙄','🍠','😙','🙂','🍁','😫','🎈','🎨','😯','👰','😚','😁','🎅','🤣','㊗','🙂','🔞','🤩','💨','😛','😌','🕳','🤥'];
 
     for (let i = 0; i <= characters.length; i++) {
         (() => {
@@ -42,20 +42,18 @@ window.addEventListener('mousemove', function(e) {
 
 
 var container = document.getElementById('animate');
-var emoji = ['🌽', '🍇', '🍌', '🍒', '🍕', '🍷', '🍭', '💖', '💩', '🐷', '🐸', '🐳', '🎃', '🎾', '🌈', '🍦', '💁', '🔥', '😁', '😱', '🌴', '👏', '💃', '😁', '💕', '🤷‍', '🐱‍👤', '🐱‍🐉', '🤣', '🛴', '😨','🙄','🍠','😙','🙂','🍁','😫','🎈','🎨','😯','👰','😚','😁','🎅','🤣','㊗','🙂','🔞','🤩','💨','😛','😌','🕳','🤥'];
+var emoji = ['🌽', '🍇', '🍌', '🍒','🌵','🌵', '🍕', '🍷', '🍭', '💖', '💩', '🐷', '🐸', '🐳', '🎃', '🎾', '🌈', '🍦', '💁', '🔥', '😁', '😱', '🌴', '👏', '💃'];
 var circles = [];
-const currentEmoji = emoji[Math.floor(Math.random() * emoji.length)];
-
 
 for (var i = 0; i < 15; i++) {
-    addCircle(i * 50, [0 + 0, 300], currentEmoji);
-    addCircle(i * 50, [10 + 0, -300], currentEmoji);
-    addCircle(i * 50, [10 - 200, -300], currentEmoji);
-    addCircle(i * 50, [10 + 200, 300], currentEmoji);
-    addCircle(i * 50, [10 - 400, -300], currentEmoji);
-    addCircle(i * 50, [10 + 400, 300], currentEmoji);
-    addCircle(i * 50, [10 - 600, -300], currentEmoji);
-    addCircle(i * 50, [10 + 600, 300], currentEmoji);
+  addCircle(i * 50, [10 + 0, 300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [10 + 0, -300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [10 - 200, -300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [10 + 200, 300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [10 - 400, -300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [10 + 400, 300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [10 - 600, -300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 50, [10 + 600, 300], emoji[Math.floor(Math.random() * emoji.length)]);
 }
 
 
