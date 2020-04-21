@@ -1,96 +1,75 @@
 html,
 body {
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    width: 100%;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+body {
+	background-image: url('./images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-}
-
-.background video {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .eu {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .bruno {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    max-width: 350px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 350px;
 }
 
 .show {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    max-width: 350px;
-    animation: show infinite 1s;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 350px;
+	animation: show infinite 1s;
 }
 
 #animate{
-    margin: 0 auto;
-    width: 20px;
-    overflow: visible;
-    position: relative;
+	margin: 0 auto;
+	width: 20px;
+	overflow: visible;
+	position: relative;
 }
 
 @keyframes show {
-    0% {transform: rotate(10deg)}
-    5% {transform: rotate(-10deg)}
-    10% {transform: rotate(10deg)}
-    15% {transform: rotate(-10deg)}
-    20% {transform: rotate(10deg)}
-    25% {transform: rotate(-10deg)}
-    30% {transform: rotate(10deg)}
-    35% {transform: rotate(-10deg)}
-    40% {transform: rotate(10deg)}
-    45% {transform: rotate(-10deg)}
-    50% {transform: rotate(10deg)}
-    55% {transform: rotate(-10deg)}
-    60% {transform: rotate(10deg)}
-    65% {transform: rotate(-10deg)}
-    70% {transform: rotate(10deg)}
-    75% {transform: rotate(-10deg)}
-    80% {transform: rotate(10deg)}
-    85% {transform: rotate(-10deg)}
-    90% {transform: rotate(10deg)}
-    95% {transform: rotate(-10deg)}
-    100% {transform: rotate(10deg)}
-}
-
-
-@media (max-width: 1024px) {
-    .background video {
-        left: 70%;
-        transform: translateX(-70%);
-        width: auto;
-        height: 100%;
-    }
+	0% {transform: rotate(10deg)}
+	5% {transform: rotate(-10deg)}
+	10% {transform: rotate(10deg)}
+	15% {transform: rotate(-10deg)}
+	20% {transform: rotate(10deg)}
+	25% {transform: rotate(-10deg)}
+	30% {transform: rotate(10deg)}
+	35% {transform: rotate(-10deg)}
+	40% {transform: rotate(10deg)}
+	45% {transform: rotate(-10deg)}
+	50% {transform: rotate(10deg)}
+	55% {transform: rotate(-10deg)}
+	60% {transform: rotate(10deg)}
+	65% {transform: rotate(-10deg)}
+	70% {transform: rotate(10deg)}
+	75% {transform: rotate(-10deg)}
+	80% {transform: rotate(10deg)}
+	85% {transform: rotate(-10deg)}
+	90% {transform: rotate(10deg)}
+	95% {transform: rotate(-10deg)}
+	100% {transform: rotate(10deg)}
 }
