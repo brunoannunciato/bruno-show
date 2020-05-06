@@ -42,7 +42,7 @@ window.addEventListener('mousemove', function(e) {
 
 
 var container = document.getElementById('animate');
-var emoji = ['🌽', '🍇', '🍌', '🍒','🌵','🌵', '🍕', '🍷', '🍭', '💖', '💩', '🐷', '🐸', '🐳', '🎃', '🎾', '🌈', '🍦', '💁', '🔥', '😁', '😱', '🌴', '👏', '💃'];
+var emoji = ['HTML','CSS', 'Sass', 'Javascript', 'PHP', 'React.js', 'Gulp', 'Git', 'Webpack', 'Vtex', 'Wordpress', 'Marketo', 'Salesforce', 'Inglês', 'Node.js']
 var circles = [];
 
 for (var i = 0; i < 15; i++) {
@@ -81,11 +81,14 @@ function Circle(x, y, c, v, range) {
   this.element.style.position = 'absolute';
   this.element.style.fontSize = '26px';
   this.element.style.color = 'hsl('+(Math.random()*360|0)+',80%,50%)';
+  this.element.style.fontFamily = 'Helvetica, Arial';
+  this.element.style.fontWeight = 'bolder';
   this.element.innerHTML = c;
   container.appendChild(this.element);
 
   this.update = function() {
     if (_this.y > window.innerHeight) {
+
       _this.y = 80 + Math.random() * 4;
       _this.x = _this.range[0] + Math.random() * _this.range[1];
     }
