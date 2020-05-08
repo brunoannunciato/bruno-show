@@ -17,9 +17,9 @@ const setPageTitle = () => {
 
 window.addEventListener('mousemove', function(e) {
     [1, .9, .8, .5, .1].forEach(function(i) {
-        var j = (1 - i) * 50;
-        var elem = document.createElement('div');
-        var size = Math.ceil(Math.random() * 10 * i) + 'px';
+        let j = (1 - i) * 50;
+        let elem = document.createElement('div');
+        let size = Math.ceil(Math.random() * 10 * i) + 'px';
 
         elem.style.position = 'fixed';
         elem.style.top = e.pageY + Math.round(Math.random() * j - j / 2) + 'px';
@@ -41,11 +41,11 @@ window.addEventListener('mousemove', function(e) {
 }, false);
 
 
-var container = document.getElementById('animate');
-var emoji = ['🌽', '🍇', '🍌', '🍒','🌵','🌵', '🍕', '🍷', '🍭', '💖', '💩', '🐷', '🐸', '🐳', '🎃', '🎾', '🌈', '🍦', '💁', '🔥', '😁', '😱', '🌴', '👏', '💃'];
-var circles = [];
+let container = document.getElementById('animate');
+let emoji = ['🌽', '🍇', '🍌', '🍒','🌵','🌵', '🍕', '🍷', '🍭', '💖', '💩', '🐷', '🐸', '🐳', '🎃', '🎾', '🌈', '🍦', '💁', '🔥', '😁', '😱', '🌴', '👏', '💃'];
+let circles = [];
 
-for (var i = 0; i < 15; i++) {
+for (let i = 0; i < 15; i++) {
   addCircle(i * 50, [10 + 0, 300], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 50, [10 + 0, -300], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 50, [10 - 200, -300], emoji[Math.floor(Math.random() * emoji.length)]);
@@ -60,7 +60,7 @@ for (var i = 0; i < 15; i++) {
 
 function addCircle(delay, range, color) {
   setTimeout(function() {
-    var c = new Circle(range[0] + Math.random() * range[1], 80 + Math.random() * 4, color, {
+    let c = new Circle(range[0] + Math.random() * range[1], 80 + Math.random() * 4, color, {
       x: -0.15 + Math.random() * 0.3,
       y: 1 + Math.random() * 1
     }, range);
@@ -69,7 +69,7 @@ function addCircle(delay, range, color) {
 }
 
 function Circle(x, y, c, v, range) {
-  var _this = this;
+  let _this = this;
   this.x = x;
   this.y = y;
   this.color = c;
@@ -99,7 +99,7 @@ function Circle(x, y, c, v, range) {
 }
 
 function animate() {
-  for (var i in circles) {
+  for (let i in circles) {
     circles[i].update();
   }
   requestAnimationFrame(animate);
