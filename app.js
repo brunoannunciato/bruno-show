@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     setPageTitle();
 });
 
+console.log('contato: https://bruno.dev/')
+
 const setPageTitle = () => {
     const characters = ['😁', '💕', '🤷‍', '🐱‍👤', '🌵', '🐱‍🐉', '🤣', '🛴', '😨','🙄','🍠','😙','🙂','🍁','😫','🎈','🎨','😯','👰','😚','😁','🎅','🤣','㊗','🙂','🔞','🤩','💨','😛','😌','🕳','🤥'];
 
